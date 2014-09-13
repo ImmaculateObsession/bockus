@@ -1,6 +1,6 @@
 import os
 
-from .base import *
+from base import *
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
