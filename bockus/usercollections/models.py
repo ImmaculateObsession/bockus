@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 from books.models import Book, Cover
 
-# Create your models here.
 class UserBook(models.Model):
     user = models.ForeignKey(User)
     book = models.ForeignKey(Book)

@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 COVER_TYPE_CHOICES = (
     ("Front", "Front"),
@@ -26,6 +25,6 @@ class Cover(models.Model):
     type = models.CharField(max_length=10, choices=COVER_TYPE_CHOICES)
 
     def __str__(self):
-        return self.type + " - "+ self.book.title + " by " + \
+        return self.type + " - " + self.book.title + " by " + \
             self.book.author_last_name + ", " + self.book.author_first_name
 
