@@ -9,9 +9,9 @@ COVER_TYPE_CHOICES = (
 )
 
 class Book(models.Model):
-    title = models.CharField(max_length=50)
-    author_first_name = models.CharField(max_length=25)
-    author_last_name = models.CharField(max_length=25)
+    title = models.CharField(max_length=255)
+    author_first_name = models.CharField(max_length=100)
+    author_last_name = models.CharField(max_length=100)
     summary = models.TextField()
 
     def __str__(self):
